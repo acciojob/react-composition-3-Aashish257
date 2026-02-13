@@ -2,50 +2,43 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   padding: 16px;
+}
 
-  .tootip {
-    position: relative;
-    display: inline-block;
-    cursor: default;
-  }
+.tootip,
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: default;
+}
 
-  .tooltip {
-    position: relative;
-    display: inline-block;
-    cursor: default;
-  }
+.tooltiptext {
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #e60000;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  white-space: normal;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  min-width: 160px;
+  max-width: 220px;
+  z-index: 1000;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+}
 
-  .tooltiptext {
-    position: absolute;
-    bottom: 120%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #e60000;
-    color: #fff;
-    padding: 10px 16px;
-    border-radius: 8px;
-    white-space: normal;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 600;
-    min-width: 160px;
-    max-width: 220px;
-    z-index: 1000;
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
-  }
-
-  .tooltiptext::after {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    border-width: 6px;
-    border-style: solid;
-    border-color: #e60000 transparent transparent transparent;
-  }
-
-  border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+.tooltiptext::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: #e60000 transparent transparent transparent;
 }
 
 button {
