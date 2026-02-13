@@ -10,15 +10,11 @@ const App = () => {
       <h2>Tooltip Demo</h2>
 
       <p>
-        Hover over the <Tooltip text="I am a tooltip for the word 'word'">word</Tooltip> to see the tooltip.
+        <Tooltip text="this is another tooltip">Hover over me to see another tooltip</Tooltip> 
       </p>
 
       <p>
-        Here's a <Tooltip text="Tooltip on a button"><button>button</button></Tooltip> with a tooltip.
-      </p>
-
-      <p>
-        Emoji: <Tooltip text="Smiley tooltip">🙂</Tooltip>
+        Here's a <Tooltip text="This is a tooltip"><button>Hover over me</button></Tooltip> with a tooltip.
       </p>
 
     </div>

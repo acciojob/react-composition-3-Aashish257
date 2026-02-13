@@ -5,7 +5,7 @@ const Tooltip = ({ text, children }) => {
 
   return (
     <div
-      className="tooltip"
+      className="tootip"
       onMouseEnter={() => setVisible(true)}
       onMouseLeave={() => setVisible(false)}
     >
